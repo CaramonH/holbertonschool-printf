@@ -3,18 +3,18 @@
 
 
 /* STANDARD LIBRARIES */
-#include <stdarg.h>
-#include <limits.h>
+#include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
-#include <unistd.h>
+#include <stdarg.h>
 
 /* STRUCTS */
 
-/**
- *
- *
- *
- */
+typedef struct print
+{
+	char *print;
+	void (*f)(char*, ...)
+} print_t;
 
 /* FUNCTION PROTOTYPES */
 /* _printf.c */
