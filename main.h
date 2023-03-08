@@ -9,11 +9,11 @@
 #include <stdarg.h>
 
 /* STRUCTS */
-typedef struct print
+typedef struct format
 {
-	char *print;
-	void (*f)(char*, ...)
-} print_f;
+	char fmt;
+	char *(*f)(va_list);
+} format;
 
 /* FUNCTION PROTOTYPES */
 /* str.c */
