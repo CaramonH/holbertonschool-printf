@@ -19,3 +19,5 @@ typedef struct print
 /* FUNCTION PROTOTYPES */
 /* _printf.c */
 int _printf(const char *format, ...);
+
+#endif
