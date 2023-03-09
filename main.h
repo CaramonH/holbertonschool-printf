@@ -9,6 +9,11 @@
 #include <stdarg.h>
 
 /* STRUCTS */
+/**
+ * struct print - printf type with corresponding print function
+ * @t: print type
+ * @f: print function
+ */
 typedef struct print
 {
 	char *t;
