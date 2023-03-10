@@ -16,10 +16,10 @@ print_t p[] = { {"c", print_c}, {"s", print_s}, {"p", print_p}, {"d", print_d},
 
 for (i = 0; p[i].t != NULL; i++)
 {
-	if (*(p[i].t) == *format)
-		{
-			break;
-		}
+if (*(p[i].t) == *format)
+	{
+	break;
+	}
 }
 return (p[i].f);
 }
