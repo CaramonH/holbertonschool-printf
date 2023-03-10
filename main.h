@@ -9,23 +9,25 @@
 #include <stdarg.h>
 
 /* STRUCTS */
-typedef struct format
+/**
+ * struct print - printf type with corresponding print function
+ * @t: print type
+ * @f: print function
+ */
+typedef struct print
 {
-	char fmt;
-	char *(*f)(va_list);
-} format;
+	char *t;
+	int (*f)(va_list);
+} print_t;
 
-/* FUNCTION PROTOTYPES */
-/* str.c */
-char *spr(va_list);
-
-/* int.c */
-char *dipr(va_list);
-
-/* char.c */
-char *cpr(va_list);
-
-/* _printf.c */
+/* PROTOTYPES */
+int _putchar(char c);
 int _printf(const char *format, ...);
+int print_c(va_list c);
+int print_s(va_list s);
+int print_p(va_list p);
+int print_i(va_list i);
+int print_d(va_list d);
+int print_b(va_list b);
 
 #endif
