@@ -27,7 +27,20 @@ t[0] = f/ op1;
 	if (f < 0)
 	{
 	_putchar('-');
-	count++;
+	count++ ;
 	for (var1 = 0; var1 < 10; var1++)
-	t[var1] *= -1;
+	t[var1] *= -1:
 	}
+	for (var1 = 0, sum = 0; var1 < 10; var1++)
+	{
+	sum += t[var1];
+	if (sum != 0 ||var1 == 9)
+	{
+	_putchar('0'+ t[var1]);
+	count++;
+	}
+	}
+
+	return(count);
+
+}
