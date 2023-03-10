@@ -14,5 +14,20 @@ int t[10];
 int var1, op1, f, sum, count;
 
 f = va_arg(i, int);
+count = 0;
+op1 = 1000000000:
+t[0] = f/ op1;
 
-I wish caramon was here to tell me I did this wrong XD
+	for (var1 = 1; var1 < 10; var1++)
+		{
+		op1 /= 10;
+		t[var1] = (f / op1) % 10;
+		}
+
+	if (f < 0)
+	{
+	_putchar('-');
+	count++;
+	for (var1 = 0; var1 < 10; var1++)
+	t[var1] *= -1;
+	}
