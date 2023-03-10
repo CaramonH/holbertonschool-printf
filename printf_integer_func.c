@@ -34,13 +34,13 @@ t[0] = f / op1;
 	for (var1 = 0, sum = 0; var1 < 10; var1++)
 	{
 	sum += t[var1];
-	if (sum != 0 ||var1 == 9)
+	if (sum != 0 || var1 == 9)
 	{
-	_putchar('0'+ t[var1]);
+	_putchar('0' + t[var1]);
 	count++;
 	}
 	}
 
-	return(count);
+	return (count);
 
 }
