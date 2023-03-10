@@ -14,11 +14,11 @@ int (*check(const char *format))(va_list)
 print_t p[] = { {"c", print_c}, {"s", print_s}, {"p", print_p}, {"d", print_d},
 	{"i", print_i}, {NULL, NULL} };
 
-for (i = 0; p[i].t != NULL, i++)
+for (i = 0; p[i].t != NULL; i++)
 {
 if (*(p[i].t) == *format)
 		{
-			break
+			break;
 		}
 }
 return (p[i].f);
@@ -32,13 +32,13 @@ return (p[i].f);
 int _printf(const char *format, ...)
 {
 	unsigned int i = 0, count = 0;
-	va_list 1st;
+	va_list lst;
 	int (*f)(va_list);
 
 	if (format == NULL)
 		return (-1);
 
-	va_start(1st, format);
+	va_start(lst, format);
 	while (format[i])
 	{
 		for (; format[i] != '%' && format[i]; i++)
@@ -64,6 +64,6 @@ int _printf(const char *format, ...)
 		else
 			i++;
 	}
-	va_end(1st);
+	va_end(lst);
 	return (count);
 }
